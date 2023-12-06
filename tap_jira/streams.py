@@ -385,7 +385,7 @@ class IssueStream(JiraStream):
     """
 
     name = "issues"
-    path = "/search?maxResults=10"
+    path = "/search?maxResults=1000"
     primary_keys = ["id"]
     replication_key = "id"
     replication_method = "INCREMENTAL"
